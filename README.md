@@ -14,6 +14,11 @@ relatedTemplates:
   - postgres-kysely
 ---
 
+# Dev
+
+- vercel link
+- vercel.json: remove "ignoreCommand": "pnpm dlx turbo-ignore"
+
 # Vercel Postgres + Drizzle Next.js Starter
 
 Simple Next.js template that uses [Vercel Postgres](https://vercel.com/postgres) as the database and [Drizzle](https://github.com/drizzle-team/drizzle-orm) as the ORM.
