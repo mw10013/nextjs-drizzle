@@ -1,12 +1,12 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { Suspense } from 'react'
-import Table from '@/components/table'
-import TablePlaceholder from '@/components/table-placeholder'
-import ExpandingArrow from '@/components/expanding-arrow'
+import Image from "next/image";
+import Link from "next/link";
+import { Suspense } from "react";
+import Table from "@/components/table";
+import TablePlaceholder from "@/components/table-placeholder";
+import ExpandingArrow from "@/components/expanding-arrow";
 
-export const preferredRegion = 'home'
-export const dynamic = 'force-dynamic'
+export const preferredRegion = "home";
+export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
         <ExpandingArrow />
       </Link>
       <h1 className="pt-4 pb-8 bg-gradient-to-br from-black via-[#171717] to-[#4b4b4b] bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl">
-        Postgres on Vercel!
+        Postgres on Vercel!!
       </h1>
       <Suspense fallback={<TablePlaceholder />}>
         {/* @ts-expect-error Async Server Component */}
@@ -31,15 +31,15 @@ export default function Home() {
           className="font-medium underline underline-offset-4 hover:text-black transition-colors"
         >
           Vercel Postgres
-        </Link>{' '}
-        demo with{' '}
+        </Link>{" "}
+        demo with{" "}
         <Link
           href="https://github.com/drizzle-team/drizzle-orm"
           className="font-medium underline underline-offset-4 hover:text-black transition-colors"
         >
           Drizzle
-        </Link>{' '}
-        as the ORM. <br /> Built with{' '}
+        </Link>{" "}
+        as the ORM. <br /> Built with{" "}
         <Link
           href="https://nextjs.org/docs"
           className="font-medium underline underline-offset-4 hover:text-black transition-colors"
@@ -95,5 +95,5 @@ export default function Home() {
         </Link>
       </div>
     </main>
-  )
+  );
 }
