@@ -17,7 +17,11 @@ relatedTemplates:
 # Dev
 
 - vercel link
+- vercel env pull .env.development.local
 - vercel.json: remove "ignoreCommand": "pnpm dlx turbo-ignore"
+- https://neon.tech/blog/serverless-driver-for-postgres
+- https://github.com/vercel/examples/tree/main/storage
+
 
 # Vercel Postgres + Drizzle Next.js Starter
 
